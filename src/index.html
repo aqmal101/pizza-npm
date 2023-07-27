@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<style>
+  .li:hover{
+      font-weight: 700;
+  }
+
+  .li-icon:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+
+  .add-cart{
+      color: #EC0000;
+      background-color: #fff;
+      border: 2px solid #EC0000;
+
+  }
+
+</style>
+
+<title>Pizza Time</title>
+</head>
+<body class="w-full flex flex-col">
+<nav class="flex flex-row justify-between items-center z-1 px-14 h-24 shadow-lg shadow-red-500/40">
+  <div class="flex center center">
+      <img src="./img/pizza-logo.svg" alt="pizza-logo">
+  </div>
+  <div class="menu">
+      <ul class="flex items-center justify-between gap-6">
+          <li class="li"><a href="#">Home</a></li>
+          <li class="li"><a href="#">Menu</a></li>
+          <li class="li"><a href="#">Promo</a></li>
+          <li class="li-icon"><img src="./img/search.svg" alt="search-ico"></li>
+          <li class="li-icon"><img src="./img/cart.svg" alt="cart-ico"></li>
+          <!-- sign-in button -->
+          <li><button class="li-icon text-sm bg-red-600 py-2.5 px-6 rounded-full text-white">SIGN IN</button></li>
+      </ul>
+  </div>
+</nav>
+
+<!-- container -->
+<div class="flex flex-col w-full mt-3">
+      <!-- section 1 -->
+      <!-- hero -->
+      <div class="flex flex-row justify-between items-center w-100">
+          <div class="flex flex-col justify-between items-center w-1/2">
+              <div class="flex flex-col items-left justify-center gap-6">
+                  <h1 class="text-6xl font-bold">Friday Pizza!</h1>
+                  <p class="text-3xl font-bold">Time to enjoy our delicious pizza.<p>
+                  <button class="text-sm bg-red-600 py-2.5 px-6 rounded-full text-white shadow-lg shadow-red-500/60 transition-all hover:scale-110" type="submit">
+                  ORDER NOW</button>
+              </div>
+          </div>
+          <!-- banner -->
+          <div class="banner">
+              <img src="./img/hero-pizza.png" alt="margareta-pizza">
+          </div>
+      </div>
+
+      <!-- section 2 -->
+      <!--   recomendation menu -->
+      <div class="flex flex-col items-center w-full">
+          <h2 class="text-2xl font-bold py-6 text-[#00240F] my-4">Recommended Menu</h2>
+          <!-- cards -->
+          <div class="flex flex-row items-center justify-center mb-32 gap-x-10 mt-5">
+
+              <!-- pizza 1 -->
+              <div class="w-80 h-auto px-4 py-6 border border-gray-500 flex flex-col justify-center items-around rounded-t-full shadow-lg shadow-gray-700/40"> 
+                  <div class="ml-10">
+                      <img class="border rounded-full shadow-lg shadow-gray-700/70" src="./img/pizza1.png" alt="">
+                  </div>
+                  <!-- detailment -->
+                  <div class="flex flex-col justify-center items-center">
+                  <!-- align-items itu y axis = tegak -->
+                  <!-- justify-content itu x axis = horizontal -->
+                      <div class="text-center">
+                          <h3 class="text-xl font-bold my-4">Cheese Lovers</h3>
+                          <p>
+                              Combination of Alfredo sauce and two cheese - Romano and Parmesan.
+                          </p>
+                      </div>
+                      <div class="price">
+                          <p class="text-2xl font-bold text-green-600 my-5">$ 20.00</p>
+                      </div>
+
+                      <div class="flex flex-col gap-y-2.5">
+                          <div  class=" flex flex-row justify-between items-center border-2 border-black rounded-full py-2 px-6 gap-x-28">
+                              <span>Regular</span>
+                              <span><img src="./img/arrow-down.png" alt="arrow-down"></span>
+                          </div>
+                          <button class="bg-red-600 py-2 px-16 rounded-full text-white shadow-lg hover:text-red-600 hover:bg-white hover:font-bold hover: border border-red-600" type="submit">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <!-- pizza 2 -->
+              <div class="w-80 h-auto px-4 py-6 border border-gray-500 flex flex-col justify-center items-around rounded-t-full shadow-lg shadow-gray-700/40"> 
+                  <div class="ml-10">
+                      <img class="border rounded-full shadow-lg shadow-gray-700/70" src="./img/pizza2.png" alt="">
+                  </div>
+                  <!-- detailment -->
+                  <div class="flex flex-col justify-center items-center">
+                  <!-- align-items itu y axis = tegak -->
+                  <!-- justify-content itu x axis = horizontal -->
+                      <div class="text-center">
+                          <h3 class="text-xl font-bold my-4">Pepperoni Pizza</h3>
+                          <p>
+                              Pizza with homemade spicy beef sausage
+                          </p>
+                      </div>
+                      <div class="price">
+                          <p class="text-2xl font-bold text-green-600 my-5">$ 25.00</p>
+                      </div>
+
+                      <div class="flex flex-col gap-y-2.5">
+                          <div  class=" flex flex-row justify-between items-center border-2 border-black rounded-full py-2 px-6 gap-x-28">
+                              <span>Regular</span>
+                              <span><img src="./img/arrow-down.png" alt="arrow-down"></span>
+                          </div>
+                          <button class="bg-red-600 py-2 px-16 rounded-full text-white shadow-lg hover:text-red-600 hover:bg-white hover:font-bold hover: border border-red-600" type="submit">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <!-- pizza 3 -->
+              <div class="w-80 h-auto px-4 py-6 border border-gray-500 flex flex-col justify-center items-around rounded-t-full shadow-lg shadow-gray-700/40"> 
+                  <div class="ml-10">
+                      <img class="border rounded-full shadow-lg shadow-gray-700/70" src="./img/pizza3.png" alt="">
+                  </div>
+                  <!-- detailment -->
+                  <div class="flex flex-col justify-center items-center">
+                  <!-- align-items itu y axis = tegak -->
+                  <!-- justify-content itu x axis = horizontal -->
+                      <div class="text-center">
+                          <h3 class="text-xl font-bold my-4">Margherita Pizza</h3>
+                          <p>
+                              Made with San Marzano tomatoes, mozzarella cheese, and fresh basil.
+                          </p>
+                      </div>
+                      <div class="price">
+                          <p class="text-2xl font-bold text-green-600 my-5">$ 35.00</p>
+                      </div>
+
+                      <div class="flex flex-col gap-y-2.5">
+                          <div  class=" flex flex-row justify-between items-center border-2 border-black rounded-full py-2 px-6 gap-x-28">
+                              <span>Regular</span>
+                              <span><img src="./img/arrow-down.png" alt="arrow-down"></span>
+                          </div>
+                          <button class="bg-red-600 py-2 px-16 rounded-full text-white shadow-lg hover:text-red-600 hover:bg-white hover:font-bold hover: border border-red-600" type="submit">ADD TO CART</button>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+</div>
+</body>
+</html>
